@@ -146,46 +146,58 @@ a{color:#102048}a:hover{color:#1d3a80}
     </div>
   </section>
 
-  <!-- PRESTATIONS -->
+  <!-- PRESTATIONS (version D, 25/11) -->
   <section style="padding: 96px 5%; box-sizing: border-box; background: #ffffff">
-    <style>.chd-c{transition:border-color .4s ease,transform .4s ease,box-shadow .4s ease}.chd-c:hover{border-color:rgba(63,182,139,0.7);transform:translateY(-6px);box-shadow:0 22px 44px rgba(11,20,48,.28)}@media (max-width:700px){.chd-c{grid-template-columns:1fr !important}.chd-c > div:first-child{min-height:200px !important}}</style>
+    <style>.chp-d-t{transition:transform .4s ease,box-shadow .4s ease}.chp-d:hover .chp-d-t{transform:translateY(-8px);box-shadow:0 24px 48px rgba(16,32,72,.28)}.chp-d-v{transition:opacity .4s ease}.chp-d:hover .chp-d-v{opacity:.35}.chp-d-i{transition:transform .4s ease}.chp-d:hover .chp-d-i{transform:translateY(-6px) scale(1.12)}</style>
     <div style="max-width: 1200px; margin: 0 auto">
       <div style="text-align: center; margin-bottom: 48px">
         <p style="margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: #0B5D45">Ce que je propose</p>
         <h2 class="cht-big" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 44px; font-weight: 600; color: #0e1424">Des vidéos pour chaque besoin</h2>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 26px">
-        <div class="chd-c" style="display: grid; grid-template-columns: 1fr 1fr; background: #1A2B57; border: 1px solid #1A2B57; border-radius: 18px; overflow: hidden">
-          <div style="position: relative; min-height: 280px; overflow: hidden"><img src="/medias/entreprise-presentation-a.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
-          <div style="padding: 34px 30px; display: flex; flex-direction: column; justify-content: center">
-            <div style="font-size: 12px; font-weight: 700; letter-spacing: .2em; color: #3FB68B">01</div>
-            <h3 style="margin: 12px 0 14px; font-family: 'Playfair Display', Georgia, serif; font-size: 27px; line-height: 1.2; font-weight: 600; color: #ffffff">Présentation d'entreprise</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #aab4c8">Votre activité, vos valeurs et vos équipes pour vous faire connaître en quelques minutes.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+        <div class="chp-d">
+          <div class="chp-d-t" style="position: relative; overflow: hidden; height: 300px; border-radius: 18px">
+            <img src="/medias/entreprise-presentation-a.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+            <div class="chp-d-v" style="position: absolute; inset: 0; background: rgba(16,32,72,.62)"></div>
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 0 20px; text-align: center">
+              <img class="chp-d-i" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%233FB68B%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%2021h18M5%2021V7l7-4%207%204v14M9%2021v-6h6v6%22/%3E%3C/svg%3E" alt="" style="width: 34px; height: 34px; filter: drop-shadow(0 1px 6px rgba(0,0,0,.35))">
+              <span style="color: #ffffff; font-size: 15px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-shadow: 0 1px 8px rgba(0,0,0,.35)">Présentation d'entreprise</span>
+            </div>
           </div>
+          <p style="margin: 18px 0 0; text-align: center; font-size: 15px; line-height: 1.65; color: #555c6c; padding: 0 6px">Votre activité, vos valeurs et vos équipes pour vous faire connaître en quelques minutes.</p>
         </div>
-        <div class="chd-c" style="display: grid; grid-template-columns: 1fr 1fr; background: #1A2B57; border: 1px solid #1A2B57; border-radius: 18px; overflow: hidden">
-          <div style="position: relative; min-height: 280px; overflow: hidden"><img src="/medias/entreprise-marque-employeur.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
-          <div style="padding: 34px 30px; display: flex; flex-direction: column; justify-content: center">
-            <div style="font-size: 12px; font-weight: 700; letter-spacing: .2em; color: #3FB68B">02</div>
-            <h3 style="margin: 12px 0 14px; font-family: 'Playfair Display', Georgia, serif; font-size: 27px; line-height: 1.2; font-weight: 600; color: #ffffff">Marque employeur</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #aab4c8">Le quotidien de votre travail pour attirer les bons profils.</p>
+        <div class="chp-d">
+          <div class="chp-d-t" style="position: relative; overflow: hidden; height: 300px; border-radius: 18px">
+            <img src="/medias/entreprise-marque-employeur.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+            <div class="chp-d-v" style="position: absolute; inset: 0; background: rgba(16,32,72,.62)"></div>
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 0 20px; text-align: center">
+              <img class="chp-d-i" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%233FB68B%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M16%2021v-2a4%204%200%200%200-4-4H6a4%204%200%200%200-4%204v2M9%2011a4%204%200%201%200%200-8%204%204%200%200%200%200%208M22%2021v-2a4%204%200%200%200-3-3.9M16%203.1a4%204%200%200%201%200%207.8%22/%3E%3C/svg%3E" alt="" style="width: 34px; height: 34px; filter: drop-shadow(0 1px 6px rgba(0,0,0,.35))">
+              <span style="color: #ffffff; font-size: 15px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-shadow: 0 1px 8px rgba(0,0,0,.35)">Marque employeur</span>
+            </div>
           </div>
+          <p style="margin: 18px 0 0; text-align: center; font-size: 15px; line-height: 1.65; color: #555c6c; padding: 0 6px">Le quotidien de votre travail pour attirer les bons profils.</p>
         </div>
-        <div class="chd-c" style="display: grid; grid-template-columns: 1fr 1fr; background: #1A2B57; border: 1px solid #1A2B57; border-radius: 18px; overflow: hidden">
-          <div style="position: relative; min-height: 280px; overflow: hidden"><img src="/medias/entreprise-interviews.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
-          <div style="padding: 34px 30px; display: flex; flex-direction: column; justify-content: center">
-            <div style="font-size: 12px; font-weight: 700; letter-spacing: .2em; color: #3FB68B">03</div>
-            <h3 style="margin: 12px 0 14px; font-family: 'Playfair Display', Georgia, serif; font-size: 27px; line-height: 1.2; font-weight: 600; color: #ffffff">Interviews et témoignages</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #aab4c8">La parole de vos dirigeants, de vos clients ou de vos salariés. Simple et sincère.</p>
+        <div class="chp-d">
+          <div class="chp-d-t" style="position: relative; overflow: hidden; height: 300px; border-radius: 18px">
+            <img src="/medias/entreprise-interviews.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+            <div class="chp-d-v" style="position: absolute; inset: 0; background: rgba(16,32,72,.62)"></div>
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 0 20px; text-align: center">
+              <img class="chp-d-i" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%233FB68B%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%202a3%203%200%200%200-3%203v7a3%203%200%200%200%206%200V5a3%203%200%200%200-3-3zM19%2010v2a7%207%200%200%201-14%200v-2M12%2019v3%22/%3E%3C/svg%3E" alt="" style="width: 34px; height: 34px; filter: drop-shadow(0 1px 6px rgba(0,0,0,.35))">
+              <span style="color: #ffffff; font-size: 15px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-shadow: 0 1px 8px rgba(0,0,0,.35)">Interviews et témoignages</span>
+            </div>
           </div>
+          <p style="margin: 18px 0 0; text-align: center; font-size: 15px; line-height: 1.65; color: #555c6c; padding: 0 6px">La parole de vos dirigeants, de vos clients ou de vos salariés. Simple et sincère.</p>
         </div>
-        <div class="chd-c" style="display: grid; grid-template-columns: 1fr 1fr; background: #1A2B57; border: 1px solid #1A2B57; border-radius: 18px; overflow: hidden">
-          <div style="position: relative; min-height: 280px; overflow: hidden"><img src="/medias/entreprise-salons.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
-          <div style="padding: 34px 30px; display: flex; flex-direction: column; justify-content: center">
-            <div style="font-size: 12px; font-weight: 700; letter-spacing: .2em; color: #3FB68B">04</div>
-            <h3 style="margin: 12px 0 14px; font-family: 'Playfair Display', Georgia, serif; font-size: 27px; line-height: 1.2; font-weight: 600; color: #ffffff">Salons et séminaires</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #aab4c8">Vos temps forts filmés pour les faire revivre après l'événement.</p>
+        <div class="chp-d">
+          <div class="chp-d-t" style="position: relative; overflow: hidden; height: 300px; border-radius: 18px">
+            <img src="/medias/entreprise-salons.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+            <div class="chp-d-v" style="position: absolute; inset: 0; background: rgba(16,32,72,.62)"></div>
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 0 20px; text-align: center">
+              <img class="chp-d-i" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%233FB68B%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%205h18v16H3zM16%203v4M8%203v4M3%2010h18%22/%3E%3C/svg%3E" alt="" style="width: 34px; height: 34px; filter: drop-shadow(0 1px 6px rgba(0,0,0,.35))">
+              <span style="color: #ffffff; font-size: 15px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-shadow: 0 1px 8px rgba(0,0,0,.35)">Salons et séminaires</span>
+            </div>
           </div>
+          <p style="margin: 18px 0 0; text-align: center; font-size: 15px; line-height: 1.65; color: #555c6c; padding: 0 6px">Vos temps forts filmés pour les faire revivre après l'événement.</p>
         </div>
       </div>
     </div>

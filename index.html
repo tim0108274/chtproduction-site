@@ -1396,10 +1396,8 @@ a{color:#102048}a:hover{color:#1d3a80}
       <div style="border-bottom: 1px solid rgb(227, 231, 239);">
         <button type="button" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; padding: 22px 4px; cursor: pointer; text-align: left; font-family: Montserrat, sans-serif; font-size: 17px; font-weight: 600; color: rgb(14, 20, 36);">
           <span>Combien coûte une vidéo ?</span>
-          <span style="font-size: 22px; font-weight: 400; color: rgb(16, 32, 72);">−</span>
+          <span style="font-size: 22px; font-weight: 400; color: rgb(16, 32, 72);">+</span>
         </button>
-        
-          <p style="margin: 0px; padding: 0px 4px 22px; font-size: 15px; line-height: 1.75; color: rgb(85, 92, 108);">Chaque projet est sur mesure : le prix dépend du temps de tournage, du montage et des formats. Je vous envoie un devis gratuit en moins de 24 h.</p>
         
       </div>
     
@@ -1941,7 +1939,7 @@ class Component extends DCLogic {
         photos: photos.map((src, i) => ({ src, op: i === k ? 1 : 0, point: i === k ? 1 : 0.45 })) };
     })
      .sort((x, y) => (y.date || '').localeCompare(x.date || ''));
-    const ouverte = st.faqOuverte === undefined ? 0 : st.faqOuverte;
+    const ouverte = st.faqOuverte === undefined ? -1 : st.faqOuverte;
     const faqBase = [
       { question: 'Combien coûte une vidéo ?', reponse: "Chaque projet est sur mesure : le prix dépend du temps de tournage, du montage et des formats. Je vous envoie un devis gratuit en moins de 24 h." },
       { question: 'En combien de temps est-elle livrée ?', reponse: "De 48 h à 2 semaines selon le projet. Pour un événement, je peux livrer très vite pour que vous en profitiez à chaud." },

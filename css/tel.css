@@ -25,3 +25,7 @@
 .tel .mm-s a{font-size:32px;padding:14px 0;color:#dfe6f6;display:flex;align-items:center;gap:16px}
 .tel .mm-s i{width:14px;height:14px;border-radius:50%;flex:none}
 .tel .mm-c{display:block;margin-top:60px;text-align:center;background:#fff;color:#102048!important;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:28px;padding:34px;border-radius:999px}
+.mm-ct{display:none}
+.tel .mm-ct{display:flex;align-items:center;position:fixed;top:26px;right:138px;z-index:90;height:96px;padding:0 40px;box-sizing:border-box;border-radius:999px;background:#fff;color:#102048;text-decoration:none;font-family:Montserrat,sans-serif;font-size:25px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 10px 30px rgba(8,14,30,.25);transition:opacity .3s,visibility .3s}
+.tel.mm-open .mm-ct{opacity:0;visibility:hidden}
+.tel .cht-onglet{display:none!important}
