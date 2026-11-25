@@ -1,0 +1,27 @@
+.tel [style*="minmax(220px"]:not([style*="max-width: 680px"]),.tel [style*="minmax(230px"],.tel [style*="minmax(200px"],.tel [style*="minmax(250px"]{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+.tel [style*="minmax(280px"]{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.tel header nav,.tel header [class*="nav"]{white-space:nowrap}
+.tel [style*="minmax(230px"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.tel section[style*="clip-path"] [style*="font-size: 52px"]{font-size:36px!important}
+.tel header{padding-left:3%!important;padding-right:3%!important;gap:12px!important}
+.tel .cht-nav-links{gap:20px!important}
+/* menu telephone (mesures x2,1 car la page est affichee sur 820 px) */
+.mm-btn,.mm{display:none}
+.tel header nav{display:none!important}
+.tel .mm-btn{display:flex;position:fixed;top:26px;right:26px;z-index:90;width:96px;height:96px;border-radius:50%;border:0;background:#102048;box-shadow:0 10px 30px rgba(8,14,30,.35);align-items:center;justify-content:center;cursor:pointer;padding:0}
+.tel .mm-btn span,.tel .mm-btn span:before,.tel .mm-btn span:after{display:block;width:42px;height:4px;background:#fff;border-radius:4px;position:relative;transition:transform .3s,background .3s}
+.tel .mm-btn span:before,.tel .mm-btn span:after{content:"";position:absolute;left:0}
+.tel .mm-btn span:before{top:-13px}.tel .mm-btn span:after{top:13px}
+.tel.mm-open .mm-btn span{background:transparent}
+.tel.mm-open .mm-btn span:before{transform:translateY(13px) rotate(45deg)}
+.tel.mm-open .mm-btn span:after{transform:translateY(-13px) rotate(-45deg)}
+.tel .mm{display:block;position:fixed;inset:0;z-index:85;background:#102048;color:#fff;padding:170px 64px 60px;overflow-y:auto;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;font-family:Montserrat,sans-serif}
+.tel.mm-open .mm{opacity:1;visibility:visible}
+.tel.mm-open,.tel.mm-open body{overflow:hidden}
+.tel .mm a{color:#fff;text-decoration:none}
+.tel .mm-p{display:block;font-family:'Playfair Display',Georgia,serif;font-size:62px;line-height:1.2;padding:18px 0}
+.tel .mm-t{font-size:24px;letter-spacing:.22em;text-transform:uppercase;color:#9fb0d6;margin:34px 0 14px}
+.tel .mm-s{display:grid;grid-template-columns:1fr 1fr;gap:6px 30px;border-left:2px solid rgba(255,255,255,.15);padding-left:28px}
+.tel .mm-s a{font-size:32px;padding:14px 0;color:#dfe6f6;display:flex;align-items:center;gap:16px}
+.tel .mm-s i{width:14px;height:14px;border-radius:50%;flex:none}
+.tel .mm-c{display:block;margin-top:60px;text-align:center;background:#fff;color:#102048!important;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:28px;padding:34px;border-radius:999px}
