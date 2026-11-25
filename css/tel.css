@@ -8,7 +8,7 @@
 /* menu telephone (mesures x2,1 car la page est affichee sur 820 px) */
 .mm-btn,.mm{display:none}
 .tel header nav{display:none!important}
-.tel .mm-btn{display:flex;position:fixed;top:26px;right:26px;z-index:90;width:96px;height:96px;border-radius:50%;border:0;background:#102048;box-shadow:0 10px 30px rgba(8,14,30,.35);align-items:center;justify-content:center;cursor:pointer;padding:0}
+.tel .mm-btn{display:flex;position:fixed;top:26px;right:26px;z-index:90;width:96px;height:96px;border-radius:50%;border:2px solid rgba(255,255,255,.45);background:rgba(16,32,72,.38);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 10px 30px rgba(8,14,30,.18);align-items:center;justify-content:center;cursor:pointer;padding:0}
 .tel .mm-btn span,.tel .mm-btn span:before,.tel .mm-btn span:after{display:block;width:42px;height:4px;background:#fff;border-radius:4px;position:relative;transition:transform .3s,background .3s}
 .tel .mm-btn span:before,.tel .mm-btn span:after{content:"";position:absolute;left:0}
 .tel .mm-btn span:before{top:-13px}.tel .mm-btn span:after{top:13px}
@@ -26,6 +26,12 @@
 .tel .mm-s i{width:14px;height:14px;border-radius:50%;flex:none}
 .tel .mm-c{display:block;margin-top:60px;text-align:center;background:#fff;color:#102048!important;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:28px;padding:34px;border-radius:999px}
 .mm-ct{display:none}
-.tel .mm-ct{display:flex;align-items:center;position:fixed;top:26px;right:138px;z-index:90;height:96px;padding:0 40px;box-sizing:border-box;border-radius:999px;background:#fff;color:#102048;text-decoration:none;font-family:Montserrat,sans-serif;font-size:25px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 10px 30px rgba(8,14,30,.25);transition:opacity .3s,visibility .3s}
+.tel .mm-ct{display:flex;align-items:center;position:fixed;top:26px;right:138px;z-index:90;height:96px;padding:0 40px;box-sizing:border-box;border-radius:999px;background:rgba(16,32,72,.38);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:2px solid rgba(255,255,255,.45);color:#fff;text-decoration:none;font-family:Montserrat,sans-serif;font-size:25px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 10px 30px rgba(8,14,30,.18);transition:opacity .3s,visibility .3s}
 .tel.mm-open .mm-ct{opacity:0;visibility:hidden}
 .tel .cht-onglet{display:none!important}
+/* menu : tous les liens a la meme taille (25/11) */
+.tel .mm-p,.tel .mm-t,.tel .mm-s a{font-family:'Playfair Display',Georgia,serif!important;font-size:46px!important;line-height:1.2!important;letter-spacing:normal!important;text-transform:none!important;color:#fff!important;padding:16px 0!important;margin:0!important}
+.tel .mm-s{grid-template-columns:1fr!important;gap:0!important;padding-left:30px!important;margin:0 0 6px!important}
+.tel .mm-s a{color:#dfe6f6!important;gap:20px!important}
+.tel .mm-s i{width:16px!important;height:16px!important}
+.tel .mm-p[style*="margin-top"]{margin-top:0!important}
