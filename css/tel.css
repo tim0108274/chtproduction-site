@@ -89,3 +89,5 @@
 /* plus de mot seul en fin de ligne sur téléphone (26/11) */
 .tel h1,.tel h2,.tel h3,.tel p,.tel li{text-wrap:balance}
 .tel article p,.tel article li{text-wrap:pretty}
+.tel .merci-l{display:block}
+.tel .merci-p:first-child{margin-bottom:0!important}
