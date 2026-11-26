@@ -39,3 +39,13 @@
 .tel .mm-s{margin:4px 0 14px!important;padding:6px 0 6px 30px!important;border-left:2px solid rgba(255,255,255,.18)!important}
 .tel .mm-s a{font-family:Montserrat,sans-serif!important;font-size:30px!important;font-weight:500!important;letter-spacing:.02em!important;color:#b9c6e4!important;padding:11px 0!important}
 .tel .mm-s i{width:14px!important;height:14px!important}
+/* audit 26/11 : formulaire, boutons et liens lisibles et faciles a toucher sur telephone */
+.tel form input:not([type=hidden]):not([type=file]),.tel form select,.tel form textarea{font-size:34px!important;padding:20px 24px!important;min-height:96px;box-sizing:border-box;border-radius:8px!important}
+.tel form textarea{min-height:260px}
+.tel form input[type=file]{font-size:28px!important;min-height:96px}
+.tel form label{font-size:26px!important;gap:12px!important}
+.tel form button[type=submit]{font-size:28px!important;padding:34px 56px!important}
+.tel form p{font-size:22px!important}
+.tel footer a{display:inline-block;padding:14px 0;font-size:26px!important}
+.tel a,.tel button{touch-action:manipulation}
+.tel section a[style*="uppercase"][style*="background"],.tel section button[style*="uppercase"]{min-height:96px!important;display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box}
