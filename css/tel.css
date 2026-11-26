@@ -49,3 +49,28 @@
 .tel footer a{display:inline-block;padding:14px 0;font-size:26px!important}
 .tel a,.tel button{touch-action:manipulation}
 .tel section a[style*="uppercase"][style*="background"],.tel section button[style*="uppercase"]{min-height:96px!important;display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box}
+/* retours version test téléphone (26/11 17h30) */
+.tel .mm-s{grid-template-columns:1fr 1fr!important;column-gap:30px!important}
+.tel [style*="minmax(200px"]:has(> .chp-e){grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:56px 40px!important}
+.tel .chp-e h3{min-height:2.5em!important;display:flex;align-items:center;justify-content:center}
+.tel [style*="minmax(280px"]:has(> .chp-a){grid-template-columns:1fr!important;gap:22px!important}
+.tel [style*="minmax(250px"]:has(> .ap-verre){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.tel footer [style*="flex-direction: column"]{gap:0!important}
+.tel footer > div:first-child a{padding:8px 0!important}
+.tel footer > div:first-child > div:nth-child(4) > div:first-child,.tel footer > div:first-child > div:nth-child(4) > a[href*="contact"]{display:none!important}
+.tel footer > div:first-child > div:nth-child(4) > a[href*="conseils"]{margin-top:0!important}
+.tel footer > div:first-child{gap:36px 48px!important}
+/* logo plus grand, aligné sur Me contacter et le menu (26/11) */
+.tel header{padding-top:30px!important;padding-bottom:30px!important}
+.tel header img{height:88px!important;width:auto!important}
+/* contact : cartes centrées et un peu plus grandes, réseaux centrés (26/11) */
+.tel .ct-gauche > div:first-child,.tel .ct-direct-bloc a.cht-direct{justify-content:center!important;zoom:1.08}
+.tel .ct-direct-bloc > div:last-child{justify-content:center!important}
+/* Pour qui : moins de vide entre les profils (P1, 26/11) */
+.tel #pour-qui > div:last-child{gap:28px!important}
+.tel #pour-qui{padding-bottom:72px!important}
+/* Exemples : 2 rectangles côte à côte, comme sur ordinateur (X2, 26/11) */
+.tel section [style*="minmax(300px"]:has(> .cht-ex){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.tel .cht-ex{height:250px!important}
+/* Derniers projets et Réalisations : rectangles plutôt que carrés (26/11) */
+.tel .rz-card > div:first-child{height:250px!important}
