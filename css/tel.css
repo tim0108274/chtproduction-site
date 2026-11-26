@@ -8,7 +8,7 @@
 /* menu telephone (mesures x2,1 car la page est affichee sur 820 px) */
 .mm-btn,.mm{display:none}
 .tel header nav{display:none!important}
-.tel .mm-btn{display:flex;position:fixed;top:26px;right:26px;z-index:90;width:96px;height:96px;border-radius:50%;border:0;background:#102048;box-shadow:0 10px 30px rgba(8,14,30,.35);align-items:center;justify-content:center;cursor:pointer;padding:0}
+.tel .mm-btn{display:flex;position:fixed;top:26px;right:26px;z-index:90;width:96px;height:96px;border-radius:50%;border:2px solid rgba(255,255,255,.45);background:rgba(16,32,72,.38);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 10px 30px rgba(8,14,30,.18);align-items:center;justify-content:center;cursor:pointer;padding:0}
 .tel .mm-btn span,.tel .mm-btn span:before,.tel .mm-btn span:after{display:block;width:42px;height:4px;background:#fff;border-radius:4px;position:relative;transition:transform .3s,background .3s}
 .tel .mm-btn span:before,.tel .mm-btn span:after{content:"";position:absolute;left:0}
 .tel .mm-btn span:before{top:-13px}.tel .mm-btn span:after{top:13px}
@@ -25,3 +25,67 @@
 .tel .mm-s a{font-size:32px;padding:14px 0;color:#dfe6f6;display:flex;align-items:center;gap:16px}
 .tel .mm-s i{width:14px;height:14px;border-radius:50%;flex:none}
 .tel .mm-c{display:block;margin-top:60px;text-align:center;background:#fff;color:#102048!important;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:28px;padding:34px;border-radius:999px}
+.mm-ct{display:none}
+.tel .mm-ct{display:flex;align-items:center;position:fixed;top:26px;right:138px;z-index:90;height:96px;padding:0 40px;box-sizing:border-box;border-radius:999px;background:rgba(16,32,72,.38);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:2px solid rgba(255,255,255,.45);color:#fff;text-decoration:none;font-family:Montserrat,sans-serif;font-size:25px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 10px 30px rgba(8,14,30,.18);transition:opacity .3s,visibility .3s}
+.tel.mm-open .mm-ct{opacity:0;visibility:hidden}
+.tel .cht-onglet{display:none!important}
+/* menu : tous les liens a la meme taille (25/11) */
+.tel .mm-p,.tel .mm-t,.tel .mm-s a{font-family:'Playfair Display',Georgia,serif!important;font-size:46px!important;line-height:1.2!important;letter-spacing:normal!important;text-transform:none!important;color:#fff!important;padding:16px 0!important;margin:0!important}
+.tel .mm-s{grid-template-columns:1fr!important;gap:0!important;padding-left:30px!important;margin:0 0 6px!important}
+.tel .mm-s a{color:#dfe6f6!important;gap:20px!important}
+.tel .mm-s i{width:16px!important;height:16px!important}
+.tel .mm-p[style*="margin-top"]{margin-top:0!important}
+/* services plus petits et distincts dans le menu (25/11 22h30) */
+.tel .mm-s{margin:4px 0 14px!important;padding:6px 0 6px 30px!important;border-left:2px solid rgba(255,255,255,.18)!important}
+.tel .mm-s a{font-family:Montserrat,sans-serif!important;font-size:30px!important;font-weight:500!important;letter-spacing:.02em!important;color:#b9c6e4!important;padding:11px 0!important}
+.tel .mm-s i{width:14px!important;height:14px!important}
+/* audit 26/11 : formulaire, boutons et liens lisibles et faciles a toucher sur telephone */
+.tel form input:not([type=hidden]):not([type=file]),.tel form select,.tel form textarea{font-size:34px!important;padding:20px 24px!important;min-height:96px;box-sizing:border-box;border-radius:8px!important}
+.tel form textarea{min-height:260px}
+.tel form input[type=file]{font-size:28px!important;min-height:96px}
+.tel form label{font-size:26px!important;gap:12px!important}
+.tel form button[type=submit]{font-size:28px!important;padding:34px 56px!important}
+.tel form p{font-size:22px!important}
+.tel footer a{display:inline-block;padding:14px 0;font-size:26px!important}
+.tel a,.tel button{touch-action:manipulation}
+.tel section a[style*="uppercase"][style*="background"],.tel section button[style*="uppercase"]{min-height:96px!important;display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box}
+/* retours version test téléphone (26/11 17h30) */
+.tel .mm-s{grid-template-columns:1fr 1fr!important;column-gap:30px!important}
+.tel [style*="minmax(200px"]:has(> .chp-e){grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:56px 40px!important}
+.tel .chp-e h3{min-height:2.5em!important;display:flex;align-items:center;justify-content:center}
+.tel [style*="minmax(280px"]:has(> .chp-a){grid-template-columns:1fr!important;gap:22px!important}
+.tel [style*="minmax(250px"]:has(> .ap-verre){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.tel footer [style*="flex-direction: column"]{gap:0!important}
+.tel footer > div:first-child a{padding:8px 0!important}
+.tel footer > div:first-child > div:nth-child(4) > div:first-child,.tel footer > div:first-child > div:nth-child(4) > a[href*="contact"]{display:none!important}
+.tel footer > div:first-child > div:nth-child(4) > a[href*="conseils"]{margin-top:0!important}
+.tel footer > div:first-child{gap:36px 48px!important}
+/* logo plus grand, aligné sur Me contacter et le menu (26/11) */
+.tel header{padding-top:30px!important;padding-bottom:30px!important}
+.tel header img{height:88px!important;width:auto!important}
+/* contact : cartes centrées et un peu plus grandes, réseaux centrés (26/11) */
+.tel .ct-gauche > div:first-child,.tel .ct-direct-bloc a.cht-direct{justify-content:flex-start!important;zoom:1.08}
+.tel .ct-direct-bloc > div:last-child{justify-content:center!important}
+/* Pour qui : moins de vide entre les profils (P1, 26/11) */
+.tel #pour-qui > div:last-child{gap:28px!important}
+.tel #pour-qui{padding-bottom:72px!important}
+/* Exemples : 2 rectangles côte à côte, comme sur ordinateur (X2, 26/11) */
+.tel section [style*="minmax(300px"]:has(> .cht-ex){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.tel .cht-ex{height:250px!important}
+/* Derniers projets et Réalisations : rectangles plutôt que carrés (26/11) */
+.tel .rz-card > div:first-child{height:250px!important}
+/* retours version test 2 (26/11 18h) */
+/* Derniers projets : pas de dates, pas de badge prix, titres moins gros */
+.tel .rz-card h3 + span{display:none!important}
+.tel .rz-card [style*="top: 16px; right: 16px"]{display:none!important}
+.tel .rz-card [style*="font-size: 34px"]{font-size:27px!important}
+/* menu : Me contacter et liens principaux un peu moins gros */
+.tel .mm-c{font-size:22px!important;padding:24px!important;margin-top:44px!important}
+.tel .mm-p,.tel .mm-t{font-size:40px!important}
+/* pages services : Demander un devis un peu plus petit */
+.tel a.cht-btn[style*="padding: 18px 36px"]{zoom:.85}
+/* contact : texte centré dans les cartes Appeler et Mail */
+.tel .ct-gauche > div:first-child > div,.tel .ct-direct-bloc a.cht-direct > span:last-child{flex:1 1 auto;display:flex;flex-direction:column;align-items:center!important;text-align:center!important}
+/* plus de mot seul en fin de ligne sur téléphone (26/11) */
+.tel h1,.tel h2,.tel h3,.tel p,.tel li{text-wrap:balance}
+.tel article p,.tel article li{text-wrap:pretty}
